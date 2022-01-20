@@ -1,0 +1,119 @@
+$bcolor: #eeeded;
+$fontColor: #0066ff;
+$fontFamily: 'Lobster', cursive;
+
+@mixin max-widthContent{
+    max-width: 1280px;
+    margin: auto;
+    padding: 0 50px;
+}
+
+
+*{ 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+header {
+    background-color: $bcolor;
+    width: 100%;
+    
+    }
+    nav{
+        height: 65px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include max-widthContent();
+        
+        .logo {
+            a{
+                font-size: 50px;
+                text-decoration: none;
+                font-family: $fontFamily;
+                color: $fontColor;
+                
+            }
+        }
+          
+        ul{
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+            
+            a{
+                text-decoration: none;
+                padding-bottom: 7px;
+                color: $fontColor;
+                
+
+                &:hover{
+                    border-bottom: 1px solid $fontColor;
+                }
+                 
+            }        
+       
+        }
+
+    }
+
+    // *************CONTENT SECTION ************
+
+
+    .content{
+        
+        
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        
+       
+        
+       
+        .btnLoadMore{
+            position: absolute;
+            bottom: 20px;
+            right: 50%;
+            
+
+         button{
+             padding: 10px;
+             cursor: pointer;
+             background-color: $bcolor;
+             color: $fontColor;
+             border: none;
+             border-radius: 5px;
+             font-size: 1rem;
+             box-shadow: 0 2px 3px 2px #8b8a8a;
+             
+             &:hover{
+                background-color: #d6d5d5;
+             }
+             
+
+         }
+        }
+
+        
+    }
+
+ // *************FOOTER SECTION ************
+
+    .footer{
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        background-color: #0066ff;
+        color:$bcolor;
+        
+
+        p{
+            text-transform: uppercase;
+
+        }
+    }
+
+

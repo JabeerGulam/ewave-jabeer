@@ -1,0 +1,75 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+header {
+  background-color: #eeeded;
+  width: 100%;
+}
+
+nav {
+  height: 65px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1280px;
+  margin: auto;
+  padding: 0 50px;
+}
+nav .logo a {
+  font-size: 50px;
+  text-decoration: none;
+  font-family: "Lobster", cursive;
+  color: #0066ff;
+}
+nav ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+nav ul a {
+  text-decoration: none;
+  padding-bottom: 7px;
+  color: #0066ff;
+}
+nav ul a:hover {
+  border-bottom: 1px solid #0066ff;
+}
+
+.content {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.content .btnLoadMore {
+  position: absolute;
+  bottom: 20px;
+  right: 50%;
+}
+.content .btnLoadMore button {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #eeeded;
+  color: #0066ff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-shadow: 0 2px 3px 2px #8b8a8a;
+}
+.content .btnLoadMore button:hover {
+  background-color: #d6d5d5;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background-color: #0066ff;
+  color: #eeeded;
+}
+.footer p {
+  text-transform: uppercase;
+}/*# sourceMappingURL=style.css.map */
