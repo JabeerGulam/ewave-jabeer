@@ -39,6 +39,23 @@ header {
                 
             }
         }
+        
+    .burger{
+        display: none;
+        i{
+            font-size: 30px;
+            color: #ffffff;
+            cursor: pointer;
+
+            &:hover{
+                color: #dddbdb;
+            }
+            &:active{
+                color: #ffffff;
+            }
+        }
+        
+    }
           
         ul{
             display: flex;
@@ -140,12 +157,16 @@ header {
 
      .carousel{
                
-              
+            
                 
                 .owl-carousel{
                    
                     padding: 30px;
                     overflow: hidden !important;
+
+                    img{
+                        max-height: 400px;
+                    }
                 }
 
                 
@@ -203,4 +224,3 @@ header {
     }
 
 
-    

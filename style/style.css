@@ -25,6 +25,20 @@ nav .logo a {
   font-family: "Roboto", Arial;
   color: #eeeded;
 }
+nav .burger {
+  display: none;
+}
+nav .burger i {
+  font-size: 30px;
+  color: #ffffff;
+  cursor: pointer;
+}
+nav .burger i:hover {
+  color: #dddbdb;
+}
+nav .burger i:active {
+  color: #ffffff;
+}
 nav ul {
   display: flex;
   gap: 2rem;
@@ -95,6 +109,9 @@ nav ul a:hover {
 .carousel .owl-carousel {
   padding: 30px;
   overflow: hidden !important;
+}
+.carousel .owl-carousel img {
+  max-height: 400px;
 }
 .carousel .owl-nav .owl-next {
   position: absolute;
