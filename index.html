@@ -91,29 +91,25 @@
         </div> -->
 
         <section class="regular slider">
-    <div>
-        <div style="display: none;" id="id"></div>
-        <div style="display: none;" id="url"></div>
-        <div id="image"></div>
-    </div>
-    <div>
-      <div style="display: none;" id="id"></div>
-        <div style="display: none;" id="url"></div>
-        <div id="image"></div>
-    </div>
-    <div>
-      <img src="http://placehold.it/350x300?text=3">
-    </div>
-    <div>
-      <img src="http://placehold.it/350x300?text=4">
-    </div>
-    <div>
-      <img src="http://placehold.it/350x300?text=5">
-    </div>
-    <div>
-      <img src="http://placehold.it/350x300?text=6">
-    </div>
-  </section>
+            <div>
+                <img src="http://placehold.it/350x300?text=1">
+            </div>
+            <div>
+                <img src="http://placehold.it/350x300?text=2">
+            </div>
+            <div>
+                 <img src="http://placehold.it/350x300?text=3">
+            </div>
+            <div>
+                 <img src="http://placehold.it/350x300?text=4">
+            </div>
+            <div>
+                 <img src="http://placehold.it/350x300?text=5">
+            </div>
+            <div>
+                 <img src="http://placehold.it/350x300?text=6">
+            </div>
+         </section>
 
 
  
@@ -138,35 +134,45 @@
             slidesToShow: 3,
             slidesToScroll: 3
           });
-        });
+
+        })
+        
+        fetch("https://api.thecatapi.com/v1/breeds")
+            .then(res => res.json())
+            .then(datas => {
+             console.log(datas)
+                     })
+        .catch(err => console.log(err))
 
         // API Fetch
-        function ajax_get(url, callback) {
-            var xmlhttp = new XMLHttpRequest();
-            xmlhttp.onreadystatechange = function() {
-                if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-                console.log('responseText:' + xmlhttp.responseText);
-                try {
-                    var data = JSON.parse(xmlhttp.responseText);
-                } catch (err) {
-                    console.log(err.message + " in " + xmlhttp.responseText);
-                    return;
-                }
-                callback(data);
-                }
-            };
+        // function ajax_get(url, callback) {
+        //     var xmlhttp = new XMLHttpRequest();
+        //     xmlhttp.onreadystatechange = function() {
+        //         if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+        //         console.log('responseText:' + xmlhttp.responseText);
+        //         try {
+        //             var data = JSON.parse(xmlhttp.responseText);
+        //         } catch (err) {
+        //             console.log(err.message + " in " + xmlhttp.responseText);
+        //             return;
+        //         }
+        //         callback(data);
+        //         }
+        //     };
 
-            xmlhttp.open("GET", url, true);
-            xmlhttp.send();
-            }
+        //     xmlhttp.open("GET", url, true);
+        //     xmlhttp.send();
+        //     }
 
-            ajax_get('https://api.thecatapi.com/v1/images/search?size=full', function(data) {
-            document.getElementById("id").innerHTML = data[0]["id"];
-            document.getElementById("url").innerHTML = data[0]["url"];
+        //     ajax_get('https://api.thecatapi.com/v1/images/search?size=full', function(data) {
+        //     document.getElementById("id").innerHTML = data[0]["id"];
+        //     document.getElementById("url").innerHTML = data[0]["url"];
 
-            var html = '<img src="' + data[0]["url"] + '">';
-            document.getElementById("image").innerHTML = html;
-            });
+        //     var html = '<img src="' + data[0]["url"] + '">';
+        //     document.getElementById("image").innerHTML = html;
+        //     });
+
+        
 
     </script>
 </body>
