@@ -20,9 +20,9 @@ nav {
   padding: 0 50px;
 }
 nav .logo a {
-  font-size: 50px;
+  font-size: 40px;
   text-decoration: none;
-  font-family: "Lobster", cursive;
+  font-weight: bold;
   color: #0066ff;
 }
 nav ul {
@@ -41,13 +41,21 @@ nav ul a:hover {
 
 .content {
   width: 100%;
-  height: 100vh;
   position: relative;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  overflow: hidden;
+}
+.content img {
+  width: 100%;
+  height: auto;
 }
 .content .btnLoadMore {
   position: absolute;
-  bottom: 20px;
-  right: 50%;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .content .btnLoadMore button {
   padding: 10px;

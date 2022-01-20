@@ -1,6 +1,6 @@
 $bcolor: #eeeded;
 $fontColor: #0066ff;
-$fontFamily: 'Lobster', cursive;
+$fontFamily: 'Lobster', 'cursivesa';
 
 @mixin max-widthContent{
     max-width: 1280px;
@@ -31,9 +31,9 @@ header {
         
         .logo {
             a{
-                font-size: 50px;
+                font-size: 40px;
                 text-decoration: none;
-                font-family: $fontFamily;
+                font-weight: bold;
                 color: $fontColor;
                 
             }
@@ -63,23 +63,35 @@ header {
     // *************CONTENT SECTION ************
 
 
-    .content{
-        
-        
-        width: 100%;
-        height: 100vh;
-        position: relative;
+   
+        .content{
+            width:100%;
+            position: relative;
+            height: fit-content;
+            overflow: hidden;
+           
+
+            img {
+                width: 100%;
+                height: auto;
+                
+                
+
+            }
         
        
         
        
+      
         .btnLoadMore{
             position: absolute;
-            bottom: 20px;
-            right: 50%;
-            
+            bottom: 15px;
+            left: 50%;
+            transform: translateX(-50%);
+           
+           
 
-         button{
+            button{
              padding: 10px;
              cursor: pointer;
              background-color: $bcolor;
@@ -96,9 +108,13 @@ header {
 
          }
         }
+    }
+    
+
+      
 
         
-    }
+    
 
  // *************FOOTER SECTION ************
 
