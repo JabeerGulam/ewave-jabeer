@@ -1,8 +1,9 @@
 $(document).ready(function(){
-    console.log("Im Ready")
+  
     $('.owl-carousel').owlCarousel({
         loop:true,
-        margin:10,
+        margin: 5,
+        autoplay:true,
         responsiveClass:true,
         responsive:{
             0:{
@@ -14,7 +15,7 @@ $(document).ready(function(){
                 nav:false
             },
             1000:{
-                items:5,
+                items:3,
                 nav:true,
                 loop:false
             }
