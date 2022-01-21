@@ -131,12 +131,12 @@ header {
  // *************SCROLL SECTION ************
     
     .scrollToTopBtn {
-        background-color: $fontColor;
+        background-color: #f1f1f1;
         border: none;
-        color: white;
+        border-radius: 90%;
+        border: 1px solid rgb(73, 73, 73);
         cursor: pointer;
         font-size: 18px;
-        line-height: 48px;
         width: 48px;
         
         position: fixed;
@@ -146,6 +146,10 @@ header {
         opacity: 0;
         transform: translateY(100px);
         transition: all 0.5s ease;
+        
+        img{
+            width: 100%;
+        }
     }
     
     .showBtn {
