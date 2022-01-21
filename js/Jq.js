@@ -21,6 +21,15 @@ $(document).ready(function(){
             }
         }
     })
-})
+
+
+        
+        })
+       
+
+
+
+
 
 // ********FOR RESPONSIVE *******
+
