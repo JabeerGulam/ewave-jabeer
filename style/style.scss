@@ -97,13 +97,11 @@ header {
         }
         
        
+      }
+      
         
-       
         .btnLoadMore{
-            position: absolute;
-            bottom: 20px;
-            left: 50%;
-            transform:translateX(-50%);
+           
             
 
          button{
@@ -123,15 +121,16 @@ header {
 
          }
         }
+      }
 
         
-    }
+   
 
 
  // *************SCROLL SECTION ************
     
     .scrollToTopBtn {
-        background-color: black;
+        background-color: $fontColor;
         border: none;
         color: white;
         cursor: pointer;
@@ -162,7 +161,7 @@ header {
                 .owl-carousel{
                    
                     padding: 30px;
-                    overflow: hidden !important;
+                    // overflow: hidden !important;
 
                     img{
                         max-height: 400px;
@@ -204,8 +203,15 @@ header {
                         }
                     }
                 }
+
+               .randomCat{
+                 display: flex;
+                 overflow:hidden;
+                 height: fit-content;
+                 position: relative;
                 
-     }
+               }
+
 
  // *************FOOTER SECTION ************
 
@@ -224,3 +230,4 @@ header {
     }
 
 
+  }

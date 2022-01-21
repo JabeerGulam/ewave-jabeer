@@ -22,9 +22,23 @@ $(document).ready(function(){
         }
     })
 
+    fetch("https://api.thecatapi.com/v1/images/search?breed_ids=rblu&limit=6")
+    .then(res => res.json())
+    .then( (data)  => {
+        var text = ''
+        data.forEach(element => {
+       text += `<div><img src="${element.url}" alt="CAT"> </div>`
+             console.log(element.url)
+              $(".randomCat").append(`<img src="${element.url}" style="height:300px;">`) 
+              
+        })
+            })  
+        .catch(err => console.log(err))
+        
+
+      });
 
         
-        })
        
 
 

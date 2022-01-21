@@ -64,13 +64,14 @@ nav ul a:hover {
 .content img {
   height: 100%;
 }
-.content .btnLoadMore {
+
+.wrapBtn .btnLoadMore {
   position: absolute;
   bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
 }
-.content .btnLoadMore button {
+.wrapBtn .btnLoadMore button {
   padding: 10px;
   cursor: pointer;
   background-color: #eeeded;
@@ -80,12 +81,12 @@ nav ul a:hover {
   font-size: 1rem;
   box-shadow: 0 2px 3px 2px #8b8a8a;
 }
-.content .btnLoadMore button:hover {
+.wrapBtn .btnLoadMore button:hover {
   background-color: #d6d5d5;
 }
 
 .scrollToTopBtn {
-  background-color: black;
+  background-color: #1f6fe6;
   border: none;
   color: white;
   cursor: pointer;
@@ -108,7 +109,6 @@ nav ul a:hover {
 
 .carousel .owl-carousel {
   padding: 30px;
-  overflow: hidden !important;
 }
 .carousel .owl-carousel img {
   max-height: 400px;
@@ -144,14 +144,21 @@ nav ul a:hover {
 .carousel .owl-dots .owl-dot.active {
   background: #f44336 !important;
 }
-
-.footer {
+.carousel .randomCat {
+  display: flex;
+  overflow: hidden;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: relative;
+}
+.carousel .footer {
   display: flex;
   justify-content: center;
   padding: 25px;
   background-color: #0066ff;
   color: #eeeded;
 }
-.footer p {
+.carousel .footer p {
   text-transform: uppercase;
 }/*# sourceMappingURL=style.css.map */

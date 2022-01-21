@@ -41,13 +41,9 @@
         </header>
 
         <!--------- CONTENT SECTION -------->
-
         <div class="content">
-             <div class="btnLoadMore">
-                <button>Load more</button>
-            </div>
-        </div>
-
+          
+         </div>
 
         <button class="scrollToTopBtn">☝️</button>
 
@@ -55,19 +51,50 @@
           <!--------- CAROUSEL SECTION -------->
 
 
-         <div class="carousel">
+        <div class="carousel">
              <div class="owl-carousel">
- 
+
+                <div>
+                    <img src="./img/cat1.jpg" alt="">
+                </div>
+                <div>
+                    <img src="./img/cat2.jpg" alt="">
+                </div>
+                <div>
+                    <img src="./img/cat4.jpg" alt="">
+                </div>
+                <div>
+                    <img src="./img/cat6.jpg" alt="">
+                </div>
+                <div>
+                    <img src="./img/cat8.jpg" alt="">
+                </div>
+                <div>
+                    <img src="./img/cat9.jpg" alt="">
+                </div>
+            </div> 
+           <div>
+
+          
+             <div class="btnLoadMore">
+                <button>Load more</button>
+             </div>
+             
+         </div>
+           </div> 
+            <div class="randomCat">
+                  
 
             </div>
-
-
+            
  
          <!--------- FOOTER SECTION -------->
 
          <div class="footer">
             <p>© Jabeer Gulam</p>
          </div>
+
+
     <script src="./js/vanilla.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./js/owl.carousel.min.js"></script>
@@ -75,20 +102,21 @@
     <!-- <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
     <script src="./slick-1.8.1/slick/slick.js" type="text/javascript" charset="utf-8"></script> -->
     <script src="./js/Jq.js"></script>
-    <script>
+    <!-- <script>
         
         fetch("https://api.thecatapi.com/v1/images/search?breed_ids=rblu&limit=10")
         .then(res => res.json())
         .then( (data)  => {
             var text = ''
             data.forEach(element => {
-           text += `<div>     <img src="${element.url}" alt="CAT"> </div>`
+           text += `<div><img src="${element.url}" alt="CAT"> </div>`
                  console.log(element.url)
-                  $(".owl-carousel").html(text)           
+                  $(".owl-carousel").html(text)   
+                  
             })
                 })  
             .catch(err => console.log(err))
-            
+             -->
        
     </script>
 </body>
