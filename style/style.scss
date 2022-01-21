@@ -1,8 +1,6 @@
 $bcolor: #eeeded;
 $fontColor: #1f6fe6;
-
 $fontFamily1: 'Roboto', Arial;
-
 @mixin max-widthContent{
     max-width: 1280px;
     margin: auto;
@@ -101,7 +99,10 @@ header {
       
         
         .btnLoadMore{
-           
+
+          display: flex;
+          justify-content: center;
+          margin-bottom: 5px;
             
 
          button{
@@ -121,7 +122,7 @@ header {
 
          }
         }
-      }
+    
 
         
    
@@ -203,15 +204,16 @@ header {
                         }
                     }
                 }
-
+            }
                .randomCat{
                  display: flex;
                  overflow:hidden;
                  height: fit-content;
                  position: relative;
+                 padding: 10px 5px;
                 
                }
-
+            
 
  // *************FOOTER SECTION ************
 
@@ -221,6 +223,7 @@ header {
         padding: 25px;
         background-color: #0066ff;
         color:$bcolor;
+
         
 
         p{
@@ -230,4 +233,55 @@ header {
     }
 
 
-  }
+// ***********  MEDIA QUERY ********
+
+@media screen and (max-width: 768px) {
+
+nav{
+    justify-content: space-between;
+    padding: 0 15px !important;
+    position: relative;
+    .burger{
+            display: in-block !important;
+             }
+   
+    ul{
+            display: none;
+            flex-direction: column;
+            gap:0;
+            background-color: rgb(107, 105, 105);
+            position: absolute;
+            top: 65px;
+            left: 0;
+            right: 0;
+            z-index: 99;
+            height: fit-content;
+            text-align: center;
+
+            li{ 
+                &:active{
+                    background-color:  rgb(88, 87, 87) !important;
+                
+                }
+                &:hover{
+                    background-color: rgb(100, 98, 98) !important;
+                
+                }
+                
+                a{
+                    display: block;
+                    padding: 10px 0;
+                    text-align: center;
+                    text-transform: uppercase;
+                    margin: 0;
+                    &:hover{
+                        border-bottom: none;
+                    }
+                }
+                    
+                }
+      
+             
+        }        
+    }
+    }

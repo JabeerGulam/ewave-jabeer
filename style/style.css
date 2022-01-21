@@ -65,13 +65,12 @@ nav ul a:hover {
   height: 100%;
 }
 
-.wrapBtn .btnLoadMore {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
+.btnLoadMore {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
 }
-.wrapBtn .btnLoadMore button {
+.btnLoadMore button {
   padding: 10px;
   cursor: pointer;
   background-color: #eeeded;
@@ -81,7 +80,7 @@ nav ul a:hover {
   font-size: 1rem;
   box-shadow: 0 2px 3px 2px #8b8a8a;
 }
-.wrapBtn .btnLoadMore button:hover {
+.btnLoadMore button:hover {
   background-color: #d6d5d5;
 }
 
@@ -144,21 +143,66 @@ nav ul a:hover {
 .carousel .owl-dots .owl-dot.active {
   background: #f44336 !important;
 }
-.carousel .randomCat {
+
+.randomCat {
   display: flex;
   overflow: hidden;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   position: relative;
+  padding: 10px 5px;
 }
-.carousel .footer {
+
+.footer {
   display: flex;
   justify-content: center;
   padding: 25px;
   background-color: #0066ff;
   color: #eeeded;
 }
-.carousel .footer p {
+.footer p {
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    justify-content: space-between;
+    padding: 0 15px !important;
+    position: relative;
+  }
+  nav .burger {
+    display: in-block !important;
+  }
+  nav ul {
+    display: none;
+    flex-direction: column;
+    gap: 0;
+    background-color: #6b6969;
+    position: absolute;
+    top: 65px;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    text-align: center;
+  }
+  nav ul li:active {
+    background-color: #585757 !important;
+  }
+  nav ul li:hover {
+    background-color: #646262 !important;
+  }
+  nav ul li a {
+    display: block;
+    padding: 10px 0;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+  }
+  nav ul li a:hover {
+    border-bottom: none;
+  }
 }/*# sourceMappingURL=style.css.map */

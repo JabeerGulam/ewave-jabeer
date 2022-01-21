@@ -22,7 +22,7 @@ $(document).ready(function(){
         }
     })
 
-    fetch("https://api.thecatapi.com/v1/images/search?breed_ids=rblu&limit=6")
+    fetch("https://api.thecatapi.com/v1/images/search?breed_ids=rblu&limit=4")
     .then(res => res.json())
     .then( (data)  => {
         var text = ''
@@ -35,7 +35,9 @@ $(document).ready(function(){
             })  
         .catch(err => console.log(err))
         
-
+        $(".burger").click(function(){
+            $("ul").toggle();
+          }); 
       });
 
         
