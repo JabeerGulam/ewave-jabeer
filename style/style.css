@@ -172,7 +172,7 @@ nav ul a:hover {
     position: relative;
   }
   nav .burger {
-    display: in-block !important;
+    display: block !important;
   }
   nav ul {
     display: none;
@@ -204,5 +204,8 @@ nav ul a:hover {
   }
   nav ul li a:hover {
     border-bottom: none;
+  }
+  nav .showNav {
+    display: flex;
   }
 }/*# sourceMappingURL=style.css.map */

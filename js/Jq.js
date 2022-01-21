@@ -36,7 +36,7 @@ $(document).ready(function(){
         .catch(err => console.log(err))
         
         $(".burger").click(function(){
-            $("ul").toggle();
+            $("ul").toggleClass("showNav");
           }); 
       });
 

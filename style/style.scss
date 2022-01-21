@@ -242,9 +242,9 @@ nav{
     padding: 0 15px !important;
     position: relative;
     .burger{
-            display: in-block !important;
+            display:block !important;
              }
-   
+      
     ul{
             display: none;
             flex-direction: column;
@@ -282,6 +282,10 @@ nav{
                 }
       
              
-        }        
+        }    
+        .showNav{
+            display: flex;
+        }    
     }
-    }
+    
+}
